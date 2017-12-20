@@ -6,12 +6,12 @@ class Index extends React.Component<{}, {}> {
         var columncount = 4;
         return (
             <div style={{ width: "100%", margin: "auto", flexGrow: 1, display: "flex", flexDirection: "column" }}>
-                <div style={{ flexGrow: 1, backgroundColor: 'lightgray' }}>
+                <div style={{ flexGrow: 1, backgroundColor: 'lightgray', display: 'flex' }}>
                     <div style={{ flex: "1 1 auto" }}>
                         <AutoSizer
                             defaultWidth={1200}
                             defaultHeight={400}>
-                            {({ width, height }) => {
+                            {({width, height}) => {
                                 if (!width || !height) {
                                     //dont try to correct
                                     return <div>Unable to determine dimensions width={width} height={height}</div>;
